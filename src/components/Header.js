@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
-
+import Nav from './Nav';
 
 
 const Header = () => {
@@ -10,6 +10,7 @@ const Header = () => {
         <NavLink to='/'>
             <h1>Home</h1>
         </NavLink>
+        <Nav/>
     </MainHeader>
   );
 };
