@@ -7,9 +7,21 @@ import Contact from "./Contact";
 import SingleProduct from "./SingleProduct";
 import ErrorPage from "./ErrorPage";
 import Cart from "./Cart";
+import { GlobalStyle } from "./GlobalStyle";
+import { ThemeProvider } from "styled-components";
+
+
 const App = () => {
+  const theme = {
+    colors: {
+      bg: "#000",
+    },
+  }
   return (
+    
+    <ThemeProvider theme = {theme}>
   <Router>
+    <GlobalStyle/>
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About/>} />
@@ -21,6 +33,7 @@ const App = () => {
 
     </Routes>
   </Router>
+  </ThemeProvider>
   );
 };
 
