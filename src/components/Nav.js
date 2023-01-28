@@ -156,6 +156,13 @@ const Nav = () => {
             <FiShoppingCart className = "cart-trolley"/>
           </li>
         </ul>
+        {/* two buttons for opening and closing menu*/}
+
+        <div className='mobile-navbar-btn'>
+          <CgMenu name="menu-outline" className="mobile-nav-icon"/>
+            <CgClose name = "close-outline"
+            className="mobile-nav-icon close-outline"/>
+        </div>
     </div>
     </Nav>
   );
