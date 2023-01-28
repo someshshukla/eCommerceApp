@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
+import { FiShoppingCart } from "react-icons/fi";
 const Nav = () => {
     const Nav = styled.nav`
     .navbar-lists {
@@ -137,9 +138,22 @@ const Nav = () => {
   return (
     <Nav>
     <div className = "navbar">
-        <ul className='navbar-list'>
+        <ul className='navbar-lists'>
           <li>
             <NavLink to="/" className="navbar-link home-link">Home</NavLink>
+          </li>
+          <li>
+            <NavLink to="/about" className="navbar-link home-link">About</NavLink>
+          </li>
+          <li>
+            <NavLink to="/products" className="navbar-link home-link">Products</NavLink>
+          </li>
+          <li>
+            <NavLink to="/contact" className="navbar-link home-link">Contact</NavLink>
+          </li>
+          <li>
+            <NavLink to="/cart" className="navbar-link home-link cart-trolley--link">Home</NavLink>
+            <FiShoppingCart className = "cart-trolley"/>
           </li>
         </ul>
     </div>
