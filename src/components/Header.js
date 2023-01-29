@@ -8,7 +8,7 @@ const Header = () => {
   return (
     <MainHeader>
         <NavLink to='/'>
-            <h1>Home</h1>
+            <h1> Somesh's Store</h1>
         </NavLink>
         <Nav/>
     </MainHeader>
