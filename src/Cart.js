@@ -4,6 +4,8 @@ const Cart = () => {
   return <Wrapper></Wrapper>;
 };
 
+
+/* Styles */
 const Wrapper = styled.section`
   padding: 9rem 0;
 
